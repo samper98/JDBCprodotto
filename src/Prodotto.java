@@ -26,6 +26,10 @@ public class Prodotto {
 		this.quantitaDisponibile=quantitaDisponibile;
 		this.prezzo=prezzo;
 	}
+	public Prodotto(String codiceProdotto,String descrizione) {
+		this.codiceProdotto=codiceProdotto;
+		this.descrizione = descrizione;
+	}
 
 	/********************/
 // GETTERS & SETTERS
@@ -39,13 +43,23 @@ public class Prodotto {
 	}
 public Integer getQuantitaDisponibile() {
 	return quantitaDisponibile;
+	
 }
+
+	public Float getPrezzo() {
+	return prezzo;
+}
+
 	/***********************************************************************/
 // METODI DERIVATI DALLA CLASSE OBJECT: toString(), equals(), hashCode()
 	/***********************************************************************/
 
 	@Override
 	public String toString() {
-		return "Prodotto{" + "codiceProdotto=" + codiceProdotto + ", descrizione=" + descrizione + " quantità="+ quantitaDisponibile + " prezzo=" + prezzo + '}';
+		return "Prodotto{" + "codiceProdotto=" + codiceProdotto + ", descrizione=" + descrizione + ", quantità="+ quantitaDisponibile + ", prezzo=" + prezzo + "} \n";
 	}
+
+
+
+
 }
